@@ -1,0 +1,52 @@
+html{
+	font-family: 'play';
+}
+
+.welcome{
+	background-image: url("../images/ocean-swing.jpg");
+  	height: 100vh;
+  	background-position: bottom right;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	color: #bfbcb6;
+
+  		&__wrapper{
+  			padding-top: 28vh;
+  			text-align: center;
+  		}
+
+  		&__heading{
+    		font-size: 8.5vw;
+    		line-height: .3;
+    	}
+
+    	&__sub-heading{
+    		font-size: 5.9vw;
+    	}
+
+    	&__ghost-button{
+    		display: block;
+    		width: 45vw;
+    		margin: 9px auto;
+    		padding: 2px;
+		    border: 2px solid #bfbcb6;
+		    border-radius: 5px;
+
+    		color: #bfbcb6;
+		    text-align: center;
+		    outline: none;
+		    text-decoration: none;
+    	}
+
+    	&__email{
+    		display: block;
+			margin-top: -21px;
+			font-size: 3.4vw;
+			padding: 0px 0px 6px 0px;
+		}
+
+		&__social-icons a{
+			font-size: 7vw;
+			padding: 1.5vw;
+		}
+}
