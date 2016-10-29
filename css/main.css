@@ -437,6 +437,12 @@ p {
   padding-bottom: 20px;
 }
 
+/*prevents hover styles from bleeding 
+  into active links on mobile devices*/
+.welcome__social-icons a .fa:hover {
+  color: #bfbcb6;
+}
+
 .welcome {
   background-image: url("../images/ocean-swing.jpg");
   height: 100vh;
@@ -446,13 +452,19 @@ p {
   color: #bfbcb6;
 }
 
+.welcome:hover {
+  color: #bfbcb6;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #bfbcb6;
+}
+
 .welcome__wrapper {
   padding-top: 28vh;
   text-align: center;
 }
 
 .welcome__heading {
-  font-size: 8.5vw;
+  font-size: 7.5vw;
   line-height: .3;
 }
 
@@ -471,7 +483,7 @@ p {
 }
 
 .welcome__sub-heading {
-  font-size: 5.9vw;
+  font-size: 6.2vw;
 }
 
 @media only screen and (min-width: 900px) {
@@ -482,13 +494,17 @@ p {
 }
 
 .welcome__ghost-button {
-  width: 45vw;
-  margin: 9px auto;
+  width: 40vw;
+  margin: 9px 1vw;
   padding: 2px;
   border: 2px solid #bfbcb6;
   border-radius: 5px;
   font-size: 4vw;
-  display: block;
+  color: #bfbcb6;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 600px) {
@@ -497,29 +513,44 @@ p {
     display: inline-block;
     margin: 9px 15px;
     width: 35vw;
+    padding: 4px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .welcome__ghost-button {
     /*desktop*/
+    border: 2.5px solid #bfbcb6;
     font-size: 2vw;
     width: 23vw;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  }
+  .welcome__ghost-button:hover {
+    color: #fff;
+    background-color: #505050;
+    /* fallback */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    /* fallback */
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
   }
 }
 
 .welcome__email {
-  margin-top: -21px;
   font-size: 3.4vw;
   padding: 0px 0px 6px 0px;
-  display: block;
+  display: inline-block;
+}
+
+.welcome__email:hover {
+  color: #bfbcb6;
 }
 
 @media only screen and (min-width: 600px) {
   .welcome__email {
     /*tablet*/
-    display: inline-block;
-    padding: 25px 0px 6px;
+    margin: 5px;
   }
 }
 
@@ -527,18 +558,34 @@ p {
   .welcome__email {
     /*desktop*/
     font-size: 2vw;
+    transition: all 0.2s ease-out;
+  }
+  .welcome__email:hover {
+    color: #fff;
+    transition: all 0.1s ease-in;
   }
 }
 
+.welcome__social-icons {
+  display: block;
+}
+
 .welcome__social-icons a {
-  font-size: 7vw;
-  padding: 1.5vw;
+  font-size: 6.5vw;
+  padding: 0px 1.5vw;
 }
 
 @media only screen and (min-width: 900px) {
   .welcome__social-icons a {
     /*desktop*/
     font-size: 4vw;
+  }
+  .welcome__social-icons a .fa {
+    transition: all 0.2s ease-out;
+  }
+  .welcome__social-icons a .fa:hover {
+    color: #fff;
+    transition: all 0.1s ease-in;
   }
 }
 
@@ -597,6 +644,7 @@ p {
 }
 
 a.back-to-top {
+  background: url("../images/back-to-top1.png") no-repeat center 43%;
   display: none;
   width: 16vw;
   height: 16vw;
@@ -605,7 +653,6 @@ a.back-to-top {
   z-index: 999;
   right: 9px;
   bottom: 9px;
-  background: url("../images/back-to-top1.png") no-repeat center 43%;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;

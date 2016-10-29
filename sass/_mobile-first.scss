@@ -6,6 +6,12 @@ p{
 	padding-bottom: 20px;
 }
 
+/*prevents hover styles from bleeding 
+  into active links on mobile devices*/
+.welcome__social-icons a .fa:hover {
+  color: #bfbcb6;
+}
+
 .welcome{
 	background-image: url("../images/ocean-swing.jpg");
   	height: 100vh;
@@ -13,14 +19,18 @@ p{
   	background-repeat: no-repeat;
   	background-size: cover;
   	color: #bfbcb6;
-
+  	&:hover{
+		color: #bfbcb6;
+		background-color: rgba(255, 255, 255, 0.0);
+		border-color: #bfbcb6;
+  	}
   		&__wrapper{
   			padding-top: 28vh;
   			text-align: center;
   		}
 
   		&__heading{
-    		font-size: 8.5vw;
+    		font-size: 7.5vw;
     		line-height: .3;
     			@media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
@@ -33,7 +43,7 @@ p{
     	}
 
     	&__sub-heading{
-    		font-size: 5.9vw;
+    		font-size: 6.2vw;
                 @media only screen and (min-width: $breakpoint-desktop) {
         		/*desktop*/
         			font-size: 4vw;
@@ -41,55 +51,88 @@ p{
     	}
 
     	&__ghost-button{
-    		width: 45vw;
-    		margin: 9px auto;
+    		width: 40vw;
+    		margin: 9px 1vw;
     		padding: 2px;
 		    border: 2px solid #bfbcb6;
 		    border-radius: 5px;
 		    font-size: 4vw;
-    		//color: #bfbcb6;
-		    //text-align: center;
-		    //outline: none;
-		    //text-decoration: none;
-    		display: block;
+    		color: #bfbcb6;
+		    text-align: center;
+		    outline: none;
+		    text-decoration: none;
+    		display: inline-block;
+
     			@media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
                     display: inline-block;
                     margin: 9px 15px;
                     width: 35vw;
+                    padding: 4px;
                 }
                 @media only screen and (min-width: $breakpoint-desktop) {
         		/*desktop*/
+		    		border: 2.5px solid #bfbcb6;
         			font-size: 2vw;
         			width: 23vw;
+        			-webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          					transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+        				&:hover{
+        				color: #fff;
+						background-color: #505050; /* fallback */
+						background-color: rgba(255, 255, 255, 0.1);
+						border-color: #fff; /* fallback */
+						border-color: rgba(255, 255, 255, 0.4);
+						-webkit-transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+						        transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+						}
         		}
     	}
 
     	&__email{
-			margin-top: -21px;
 			font-size: 3.4vw;
 			padding: 0px 0px 6px 0px;
-    		display: block;
+    		display: inline-block;
+    		&:hover{
+    			 color: #bfbcb6;
+    		}
     			@media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
-                    display: inline-block;
-                    padding: 25px 0px 6px;
+                    margin: 5px;
                 }
                 @media only screen and (min-width: $breakpoint-desktop) {
         		/*desktop*/
         			font-size: 2vw;
+        			transition: all 0.2s ease-out;
+        				&:hover{
+        					color: #fff;
+  							transition: all 0.1s ease-in;
+						}
+        				
         		}
 		}
 
+		&__social-icons{
+			display: block;
+		}
+
 		&__social-icons a{
-			font-size: 7vw;
-			padding: 1.5vw;
+			font-size: 6.5vw;
+			padding: 0px 1.5vw;
                 @media only screen and (min-width: $breakpoint-desktop) {
         		/*desktop*/
         			font-size: 4vw;
+        		.fa{
+        			transition: all 0.2s ease-out;
+        			&:hover{
+        				color: #fff;
+        				transition: all 0.1s ease-in;
+        			}
+        		}
         		}
 		}
-}
+
+}//end-welcome-classes
 
 .about{
 	background-image: url("../images/beach-fence.jpg");
@@ -137,9 +180,10 @@ p{
 			bottom: 10px;
 			left: 10px;
   		}
-}
+}//end-about-classes
 
 a.back-to-top {
+  background: url("../images/back-to-top1.png") no-repeat center 43%;
   display: none;
   width: 16vw;
   height: 16vw;
@@ -148,8 +192,8 @@ a.back-to-top {
   z-index: 999;
   right: 9px;
   bottom: 9px;
-  background: url("../images/back-to-top1.png") no-repeat center 43%;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
 }
+
