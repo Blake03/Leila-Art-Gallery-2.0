@@ -22,14 +22,25 @@ p{
   		&__heading{
     		font-size: 8.5vw;
     		line-height: .3;
+    			@media only screen and (min-width: $breakpoint-tablet) {
+                /*tablet*/
+                    font-size: 7vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+        		/*desktop*/
+        			font-size: 5vw;
+        		}
     	}
 
     	&__sub-heading{
     		font-size: 5.9vw;
+                @media only screen and (min-width: $breakpoint-desktop) {
+        		/*desktop*/
+        			font-size: 4vw;
+        		}
     	}
 
     	&__ghost-button{
-    		display: block;
     		width: 45vw;
     		margin: 9px auto;
     		padding: 2px;
@@ -40,18 +51,43 @@ p{
 		    //text-align: center;
 		    //outline: none;
 		    //text-decoration: none;
+    		display: block;
+    			@media only screen and (min-width: $breakpoint-tablet) {
+                /*tablet*/
+                    display: inline-block;
+                    margin: 9px 15px;
+                    width: 35vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+        		/*desktop*/
+        			font-size: 2vw;
+        			width: 23vw;
+        		}
     	}
 
     	&__email{
-    		display: block;
 			margin-top: -21px;
 			font-size: 3.4vw;
 			padding: 0px 0px 6px 0px;
+    		display: block;
+    			@media only screen and (min-width: $breakpoint-tablet) {
+                /*tablet*/
+                    display: inline-block;
+                    padding: 25px 0px 6px;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+        		/*desktop*/
+        			font-size: 2vw;
+        		}
 		}
 
 		&__social-icons a{
 			font-size: 7vw;
 			padding: 1.5vw;
+                @media only screen and (min-width: $breakpoint-desktop) {
+        		/*desktop*/
+        			font-size: 4vw;
+        		}
 		}
 }
 
@@ -63,6 +99,10 @@ p{
 	min-height: 100vh;
 	position: relative;
   	color: #bfbcb6;
+  		@media only screen and (min-width: $breakpoint-tablet) {
+        /*tablet*/
+        background-position: left;
+    	}
 
   		&__wrapper{
   			padding: 20px;
@@ -80,11 +120,20 @@ p{
   			font-size: 5vw;
   			text-align: justify;
   			line-height: 1.3;
+  				@media only screen and (min-width: $breakpoint-tablet) {
+                /*tablet*/
+                    width: 47vw;
+                    position: absolute;
+                    right: 10px;
+                    top: 20px;
+                    font-size: 1em;
+                    padding: 40px;
+                }
   		}
 
   		&__copyright{
 			position: absolute;
-  			font-size: 2vw;
+  			font-size: 8px;
 			bottom: 10px;
 			left: 10px;
   		}
