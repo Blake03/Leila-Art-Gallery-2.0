@@ -30,7 +30,7 @@ p{
   		}
 
   		&__heading{
-    		font-size: 7.5vw;
+    		font-size: 7.6vw;
     		line-height: .3;
     			@media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
@@ -53,7 +53,7 @@ p{
     	&__ghost-button{
     		width: 40vw;
     		margin: 9px 1vw;
-    		padding: 2px;
+    		padding: 3px 0px 3px;
 		    border: 2px solid #bfbcb6;
 		    border-radius: 5px;
 		    font-size: 4vw;
@@ -90,7 +90,7 @@ p{
     	}
 
     	&__email{
-			font-size: 3.4vw;
+			font-size: 4vw;
 			padding: 0px 0px 6px 0px;
     		display: inline-block;
     		&:hover{
@@ -117,7 +117,7 @@ p{
 		}
 
 		&__social-icons a{
-			font-size: 6.5vw;
+			font-size: 7.5vw;
 			padding: 0px 1.5vw;
                 @media only screen and (min-width: $breakpoint-desktop) {
         		/*desktop*/
@@ -133,6 +133,16 @@ p{
 		}
 
 }//end-welcome-classes
+
+
+.gallery{
+    background: #776F64; /* For browsers that do not support gradients */
+    background: linear-gradient(#756d62, #867f7a, #756d62);
+
+
+
+}//end-gallery-classes
+
 
 .about{
 	background-image: url("../images/beach-fence.jpg");
