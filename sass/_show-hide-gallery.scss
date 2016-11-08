@@ -1,0 +1,48 @@
+/*--Show/Hide-Gallery-------------------------------------*/
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: 1s ease;
+          transition: 1s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  display: inline-block;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  font-size: inherit;
+  max-height: 999em;
+  position: relative;
+  -webkit-transition: 1s ease;
+          transition: 1s ease;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show all';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #fff;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin-top: 1em;
+  margin-bottom: 1.7em;
+}
