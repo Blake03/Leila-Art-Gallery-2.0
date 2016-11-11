@@ -199,6 +199,10 @@ p{
   			font-size: 6vw;
   			text-align: center;
   			padding: 40px 0px 7px;
+          @media only screen and (min-width: $breakpoint-tablet) {
+          /*tablet*/
+            padding: 0px;
+          }
   		}
 
   		&__text-box{

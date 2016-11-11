@@ -666,6 +666,13 @@ p {
   padding: 40px 0px 7px;
 }
 
+@media only screen and (min-width: 737px) {
+  .about__heading {
+    /*tablet*/
+    padding: 0px;
+  }
+}
+
 .about__text-box {
   width: 80vw;
   margin: 0 auto;
