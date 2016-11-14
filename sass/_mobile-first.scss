@@ -7,109 +7,107 @@ p{
 }
 
 /*prevents hover styles from bleeding 
-  into active links on mobile devices*/
+	into active links on mobile devices*/
 .welcome__social-icons a .fa:hover {
-  color: #bfbcb6;
+	color: #bfbcb6;
 }
 
 .welcome{
 	background-image: url("../images/ocean-swing.jpg");
-  	height: 100vh;
-  	background-position: bottom right;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	color: #bfbcb6;
-  	&:hover{
+	height: 100vh;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #bfbcb6;
+	&:hover{
 		color: #bfbcb6;
 		background-color: rgba(255, 255, 255, 0.0);
 		border-color: #bfbcb6;
-  	}
-  		&__wrapper{
-  			padding-top: 28vh;
-  			text-align: center;
-  		}
+	}
 
-  		&__heading{
-    		font-size: 7.6vw;
-    		line-height: .3;
-    			@media only screen and (min-width: $breakpoint-tablet) {
-                /*tablet*/
-                    font-size: 7vw;
-                }
-                @media only screen and (min-width: $breakpoint-desktop) {
-        		/*desktop*/
-        			font-size: 5vw;
-        		}
-    	}
+		&__wrapper{
+			padding-top: 28vh;
+			text-align: center;
+		}
 
-    	&__sub-heading{
-    		font-size: 6.2vw;
-                @media only screen and (min-width: $breakpoint-desktop) {
-        		/*desktop*/
-        			font-size: 4vw;
-        		}
-    	}
+		&__heading{
+			font-size: 7.6vw;
+			line-height: .3;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					font-size: 7vw;
+				}
+				@media only screen and (min-width: $breakpoint-desktop) {
+				/*desktop*/
+					font-size: 5vw;
+				}
+		}
 
-    	&__ghost-button{
-    		width: 40vw;
-    		margin: 9px 1vw;
-    		padding: 3px 0px 3px;
-		    border: 2px solid #bfbcb6;
-		    border-radius: 5px;
-		    font-size: 4vw;
-    		color: #bfbcb6;
-		    text-align: center;
-		    outline: none;
-		    text-decoration: none;
-    		display: inline-block;
+		&__sub-heading{
+			font-size: 6.2vw;
+				@media only screen and (min-width: $breakpoint-desktop) {
+				/*desktop*/
+					font-size: 4vw;
+				}
+		}
 
-    			@media only screen and (min-width: $breakpoint-tablet) {
-                /*tablet*/
-                    display: inline-block;
-                    margin: 9px 15px;
-                    width: 35vw;
-                    padding: 4px;
-                }
-                @media only screen and (min-width: $breakpoint-desktop) {
-        		/*desktop*/
-		    		border: 2.5px solid #bfbcb6;
-        			font-size: 2vw;
-        			width: 23vw;
-        			-webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-          					transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-        				&:hover{
-        				color: #fff;
-						background-color: #505050; /* fallback */
-						background-color: rgba(255, 255, 255, 0.1);
-						border-color: #fff; /* fallback */
-						border-color: rgba(255, 255, 255, 0.4);
-						-webkit-transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
-						        transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+		&__ghost-button{
+			width: 40vw;
+			margin: 9px 1vw;
+			padding: 3px 0px 3px;
+			border: 2px solid #bfbcb6;
+			border-radius: 5px;
+			font-size: 4vw;
+			color: #bfbcb6;
+			text-align: center;
+			outline: none;
+			text-decoration: none;
+			display: inline-block;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					display: inline-block;
+					margin: 9px 15px;
+					width: 35vw;
+					padding: 4px;
+				}
+				@media only screen and (min-width: $breakpoint-desktop) {
+				/*desktop*/
+					border: 2.5px solid #bfbcb6;
+					font-size: 2vw;
+					width: 23vw;
+					transition: background-color 0.2s ease-out;
+						&:hover{
+							color: #fff;
+							background-color: #505050; /* fallback */
+							background-color: rgba(255, 255, 255, 0.1);
+							border-color: #fff; /* fallback */
+							border-color: rgba(255, 255, 255, 0.4);
+							transition: background-color 0.1s ease-in;
 						}
-        		}
-    	}
+				}
+		}
 
-    	&__email{
+		&__email{
 			font-size: 4vw;
 			padding: 0px 0px 6px 0px;
-    		display: inline-block;
-    		&:hover{
-    			 color: #bfbcb6;
-    		}
-    			@media only screen and (min-width: $breakpoint-tablet) {
-                /*tablet*/
-                    margin: 5px;
-                }
-                @media only screen and (min-width: $breakpoint-desktop) {
-        		/*desktop*/
-        			font-size: 2vw;
-        			transition: all 0.2s ease-out;
-        				&:hover{
-        					color: #fff;
-  							transition: all 0.1s ease-in;
-						}
-        				
-        		}
+			display: inline-block;
+			&:hover{
+				 color: #bfbcb6;
+			}
+			@media only screen and (min-width: $breakpoint-tablet) {
+			/*tablet*/
+				margin: 5px;
+			}
+			@media only screen and (min-width: $breakpoint-desktop) {
+			/*desktop*/
+				font-size: 2vw;
+				transition: all 0.2s ease-out;
+				&:hover{
+					color: #fff;
+					transition: all 0.1s ease-in;
+				}
+						
+			}
 		}
 
 		&__social-icons{
@@ -119,59 +117,59 @@ p{
 		&__social-icons a{
 			font-size: 7.5vw;
 			padding: 0px 1.5vw;
-                @media only screen and (min-width: $breakpoint-desktop) {
-        		/*desktop*/
-        			font-size: 4vw;
-        		.fa{
-        			transition: all 0.2s ease-out;
-        			&:hover{
-        				color: #fff;
-        				transition: all 0.1s ease-in;
-        			}
-        		}
-        		}
+			@media only screen and (min-width: $breakpoint-desktop) {
+			/*desktop*/
+				font-size: 4vw;
+				.fa{
+					transition: all 0.2s ease-out;
+					&:hover{
+						color: #fff;
+						transition: all 0.1s ease-in;
+					}
+			}
+				}
 		}
 
 }//end-welcome-classes 
 
 
 .gallery{
-    background: #776F64; /* For browsers that do not support gradients */
-    background: linear-gradient(#756d62, #867f7a, #756d62);
-    text-align: center;
+	background: #776F64; /* For browsers that do not support gradients */
+	background: linear-gradient(#756d62, #867f7a, #756d62);
+	text-align: center;
 
-        &__heading{
-            font-size: 30px;
-            padding: 20px;
-            text-align: center;
-            color: #bfbcb6;
-            font-size: 6vw;
-                @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                    font-size: 4vw;
-                }
-        }
-        &__thumb-wrapper{
-            width: 48%;
-            padding: 1px;
-            display: inline-block;
-            list-style: none;
-            list-style-type: none;
-                @media only screen and (min-width: $breakpoint-tablet) {
-                /*tablet*/
-                    width: 30%;
-                    padding: 10px;
-                }
-                @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                    width: 20%;
-                    padding: 20px;
-                }
-        }
+		&__heading{
+			font-size: 30px;
+			padding: 20px;
+			text-align: center;
+			color: #bfbcb6;
+			font-size: 6vw;
+				@media only screen and (min-width: $breakpoint-desktop) {
+				/*desktop*/
+					font-size: 4vw;
+				}
+		}
+		&__thumb-wrapper{
+			width: 48%;
+			padding: 1px;
+			display: inline-block;
+			list-style: none;
+			list-style-type: none;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					width: 30%;
+					padding: 10px;
+				}
+				@media only screen and (min-width: $breakpoint-desktop) {
+				/*desktop*/
+					width: 20%;
+					padding: 20px;
+				}
+		}
 
-        &__thumb{
-            width: 100%;
-        }
+		&__thumb{
+			width: 100%;
+		}
 
 
 }//end-gallery-classes
@@ -185,64 +183,62 @@ p{
 	background-size: cover;
 	min-height: 100vh;
 	position: relative;
-  	color: #bfbcb6;
-  		@media only screen and (min-width: $breakpoint-tablet) {
-        /*tablet*/
-        background-position: left;
-    	}
+	color: #bfbcb6;
+		@media only screen and (min-width: $breakpoint-tablet) {
+		/*tablet*/
+			background-position: left;
+		}
 
-  		&__wrapper{
-  			padding: 20px;
-  		}
+		&__wrapper{
+			padding: 20px;
+		}
 
-  		&__heading{
-  			font-size: 6vw;
-  			text-align: center;
-  			padding: 40px 0px 7px;
-          @media only screen and (min-width: $breakpoint-tablet) {
-          /*tablet*/
-            padding: 0px;
-          }
-  		}
+		&__heading{
+			font-size: 6vw;
+			text-align: center;
+			padding: 40px 0px 7px;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					padding: 0px;
+				}
+		}
 
-  		&__text-box{
-  			width: 80vw;
-  			margin: 0 auto;
-  			font-size: 5vw;
-  			text-align: justify;
-  			line-height: 1.3;
+		&__text-box{
+			width: 80vw;
+			margin: 0 auto;
+			font-size: 5vw;
+			text-align: justify;
+			line-height: 1.3;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					width: 47vw;
+					position: absolute;
+					right: 10px;
+					top: 20px;
+					font-size: 1em;
+					padding: 40px;
+				}
+		}
 
-  				@media only screen and (min-width: $breakpoint-tablet) {
-                /*tablet*/
-                    width: 47vw;
-                    position: absolute;
-                    right: 10px;
-                    top: 20px;
-                    font-size: 1em;
-                    padding: 40px;
-                }
-  		}
-
-  		&__copyright{
+		&__copyright{
 			position: absolute;
-  			font-size: 8px;
+			font-size: 8px;
 			bottom: 10px;
 			left: 10px;
-  		}
+		}
 }//end-about-classes
 
 a.back-to-top {
-  background: url("../images/back-to-top1.png") no-repeat center 43%;
-  display: none;
-  width: 16vw;
-  height: 16vw;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 9px;
-  bottom: 9px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
+	background: url("../images/back-to-top1.png") no-repeat center 43%;
+	display: none;
+	width: 16vw;
+	height: 16vw;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 9px;
+	bottom: 9px;
+	border-radius: 30px;
+
 }
 

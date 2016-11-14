@@ -18,8 +18,8 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5 Boilerplate, jQuery
+    CSS3, Sass ,HTML5 Boilerplate, jQuery
 
     Modernizr, Normalize.css, Font Awesome, Lightbox
 
-    SublimeText 2, Git, Photoshop cc
+    SublimeText 2, Git, Photoshop cc, Gimp, Windows, and Linux

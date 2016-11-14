@@ -1,10 +1,11 @@
 //Media Queries
 $breakpoint-tablet: 737px;
 $breakpoint-desktop: 900px;
-
+ 
 //Partials
 @import "normalize";
 @import "reset";
 @import "mobile-first";
 @import "show-hide-gallery";
+@import "lightbox";
 @import "print";
