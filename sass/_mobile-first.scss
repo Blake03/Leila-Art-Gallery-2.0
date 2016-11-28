@@ -13,17 +13,21 @@ p{
 }
 
 .welcome{
-	background-image: url("../images/ocean-swing.jpg");
+	background-image: url("../images/ocean-swing-mobile.jpg");
 	height: 100vh;
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #bfbcb6;
-	&:hover{
-		color: #bfbcb6;
-		background-color: rgba(255, 255, 255, 0.0);
-		border-color: #bfbcb6;
-	}
+		@media only screen and (min-width: $breakpoint-desktop) {
+		/*desktop*/
+			background-image: url("../images/ocean-swing.jpg");
+		}
+			&:hover{
+				color: #bfbcb6;
+				background-color: rgba(255, 255, 255, 0.0);
+				border-color: #bfbcb6;
+			}
 
 		&__wrapper{
 			padding-top: 28vh;
@@ -177,8 +181,8 @@ p{
 
 
 .about{
-	background-image: url("../images/beach-fence.jpg");
-	background-position:center;
+	background-image: url("../images/beach-fence-mobile.jpg");
+	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
@@ -187,6 +191,10 @@ p{
 		@media only screen and (min-width: $breakpoint-tablet) {
 		/*tablet*/
 			background-position: left;
+		@media only screen and (min-width: $breakpoint-desktop) {
+		/*desktop*/
+			background-image: url("../images/beach-fence3.jpg");
+		}
 		}
 
 		&__wrapper{
