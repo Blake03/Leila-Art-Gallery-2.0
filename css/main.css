@@ -617,6 +617,13 @@ p {
   color: #bfbcb6;
 }
 
+@media only screen and (min-width: 737px) {
+  .gallery__heading {
+    /*tablet*/
+    font-size: 7vw;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .gallery__heading {
     /*desktop*/

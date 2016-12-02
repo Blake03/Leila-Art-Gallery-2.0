@@ -151,6 +151,10 @@ p{
 			padding: 20px;
 			text-align: center;
 			color: #bfbcb6;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+				font-size: 7vw;
+				}
 				@media only screen and (min-width: $breakpoint-desktop) {
 				/*desktop*/
 					font-size: 4vw;
