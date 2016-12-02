@@ -493,6 +493,13 @@ p {
   font-size: 6.2vw;
 }
 
+@media only screen and (min-width: 737px) {
+  .welcome__sub-heading {
+    /*tablet*/
+    font-size: 5.9vw;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .welcome__sub-heading {
     /*desktop*/
@@ -604,11 +611,10 @@ p {
 }
 
 .gallery__heading {
-  font-size: 30px;
+  font-size: 7.6vw;
   padding: 20px;
   text-align: center;
   color: #bfbcb6;
-  font-size: 6vw;
 }
 
 @media only screen and (min-width: 900px) {
@@ -675,7 +681,7 @@ p {
 }
 
 .about__heading {
-  font-size: 6vw;
+  font-size: 7.6vw;
   text-align: center;
   padding: 40px 0px 7px;
 }
@@ -684,6 +690,7 @@ p {
   .about__heading {
     /*tablet*/
     padding: 0px;
+    font-size: 5.9vw;
   }
 }
 
@@ -704,6 +711,9 @@ p {
     top: 20px;
     font-size: 1em;
     padding: 40px;
+  }
+  .about__text-box p {
+    padding: 9px;
   }
 }
 

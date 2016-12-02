@@ -49,6 +49,10 @@ p{
 
 		&__sub-heading{
 			font-size: 6.2vw;
+				@media only screen and (min-width: $breakpoint-tablet) {
+				/*tablet*/
+					font-size: 5.9vw;
+				}
 				@media only screen and (min-width: $breakpoint-desktop) {
 				/*desktop*/
 					font-size: 4vw;
@@ -143,11 +147,10 @@ p{
 	text-align: center;
 
 		&__heading{
-			font-size: 30px;
+			font-size: 7.6vw;
 			padding: 20px;
 			text-align: center;
 			color: #bfbcb6;
-			font-size: 6vw;
 				@media only screen and (min-width: $breakpoint-desktop) {
 				/*desktop*/
 					font-size: 4vw;
@@ -202,12 +205,13 @@ p{
 		}
 
 		&__heading{
-			font-size: 6vw;
+			font-size: 7.6vw;
 			text-align: center;
 			padding: 40px 0px 7px;
 				@media only screen and (min-width: $breakpoint-tablet) {
 				/*tablet*/
 					padding: 0px;
+					font-size: 5.9vw
 				}
 		}
 
@@ -225,6 +229,9 @@ p{
 					top: 20px;
 					font-size: 1em;
 					padding: 40px;
+						p{
+							padding: 9px;
+						}
 				}
 		}
 
