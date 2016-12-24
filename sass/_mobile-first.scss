@@ -248,16 +248,18 @@ p{
 }//end-about-classes
 
 a.back-to-top {
-	background: url("../images/back-to-top1.png") no-repeat center 43%;
-	display: none;
-	width: 16vw;
-	height: 16vw;
-	text-indent: -9999px;
-	position: fixed;
-	z-index: 999;
-	right: 9px;
-	bottom: 9px;
-	border-radius: 30px;
-
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 50px;
+    bottom: 30px;
+    border-radius: 30px;
+    font-size: 7vw;
+    color: #fff;
+	transition: all 0.1s ease-out;
+    	&:hover{
+			transition: all 0.1s ease-in;
+			font-size: 7.3vw;
+		}
 }
 
