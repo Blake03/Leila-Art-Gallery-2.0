@@ -251,15 +251,21 @@ a.back-to-top {
     display: none;
     position: fixed;
     z-index: 999;
-    right: 50px;
-    bottom: 30px;
+    font-size: 17vw;
+    right: 20px;
+    bottom: 7px;
     border-radius: 30px;
-    font-size: 7vw;
     color: #fff;
 	transition: all 0.1s ease-out;
+		@media only screen and (min-width: $breakpoint-tablet) {
+		/*tablet*/
+    		font-size: 85px;
+    		right: 30px;
+    	}
     	&:hover{
-			transition: all 0.1s ease-in;
-			font-size: 7.3vw;
+		text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.34);
+		transition: all 0.1s ease-in;
+		transform: scale(1.05);
 		}
 }
 
